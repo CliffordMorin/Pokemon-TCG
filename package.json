@@ -37,8 +37,7 @@
     "pokedex-promise-v2": "^3.3.0",
     "pokemontcgsdk": "^2.0.0",
     "sequelize": "^6.6.2",
-    "socket.io": "^4.1.1",
-    "vercel": "^29.1.1"
+    "socket.io": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
