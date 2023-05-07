@@ -1,5 +1,5 @@
 {
-  "name": "pokemon-tcg-app",
+  "name": "pokemon-tcg",
   "version": "1.0.0",
   "description": "A Pokemon TCG Application",
   "main": "server.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thebadams/Pokemon-TCG-App.git"
+    "url": "git+https://github.com/cliffordmorin/pokemon-tcg.git"
   },
   "keywords": [
     "Pokemon",
@@ -22,9 +22,9 @@
   "author": "The Pokemon Trainers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thebadams/Pokemon-TCG-App/issues"
+    "url": "https://github.com/cliffordmorin/pokemon-tcg/issues"
   },
-  "homepage": "https://github.com/thebadams/Pokemon-TCG-App#readme",
+  "homepage": "https://github.com/cliffordmorin/pokemon-tcg#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
@@ -38,7 +38,8 @@
     "pokemon-font": "^1.8.1",
     "pokemontcgsdk": "^2.0.0",
     "sequelize": "^6.6.2",
-    "socket.io": "^4.1.1"
+    "socket.io": "^4.1.1",
+    "vercel": "^29.1.1"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
