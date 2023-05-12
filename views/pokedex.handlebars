@@ -1,6 +1,6 @@
 {{!-- SEARCH BAR --}}
 
-<form class="searchForm hide-on-small-only" id="searchForm" style="margin-left: 25%; margin-right:10%;">
+<form class="searchForm " id="searchForm">
     <div class="row">
         <div class="col s12">
             <div class="input-field col s6" id="poke-search">
@@ -8,7 +8,7 @@
                 <input type="text" id="autocomplete-input" class="autocomplete">
                 <label id="poke-input" for="autocomplete-input">Search</label>
             </div>
-                <button class="btn waves-effect waves-light btn-large" type="submit" name="action" id="toggleImg" style="margin-top: 0.75rem;">Submit
+                <button class="btn waves-effect waves-light btn-md center-align" type="submit" name="action" id="toggleImg" style="margin-top: 0.75rem;">Submit
                     <i class="iconify" data-icon="mdi-pokeball" data-inline="true" style="font-size: 16px;"></i>
                 </button>
         </div>
@@ -16,12 +16,12 @@
 </form>
 
 {{!-- box and pokedex img --}}
-<div class="row" id="toggle-img" style="margin-top: 0.25rem;">
+<div class="container" id="toggle-img" style="margin-top: 0.25rem;">
 
-    <div class="col s12  ">
+    <div class="col s12 m6">
         <div class="box">
 
-            <ul>
+            <ul class="detailSearchCard">
                 <li>- Search for your favorite Pokémon.</li>
                 <li>- Different versions will be displayed.</li>
                 <li>- Add the best one to your collection!</li>
@@ -37,7 +37,7 @@
 
 {{!-- MOBILE STYLING --}}
 
-<div class="row">
+{{!-- <div class="row">
     <form class="searchForm hide-on-med-and-up" id="searchForm">
         <div class="row">
             <div class="col s12">
@@ -45,7 +45,7 @@
                     <div class="input-field col s12">
                         <i class="material-icons prefix">search</i>
                         <input type="text" id="autocomplete-input" class="autocomplete">
-                        <label for="autocomplete-input">Search</label>
+                        <label id="poke-input" for="autocomplete-input">Search</label>
                     </div>
                         <button class="btn waves-effect waves-light btn-large" type="submit" name="action"
                             id="toggleImg" style="margin-top: 0.75rem;">Submit
@@ -55,7 +55,7 @@
             </div>
         </div>
     </form>
-</div>
+</div> --}}
 
 <div class="progress">
     <div class="indeterminate" style="width: 70%"></div>
