@@ -20,7 +20,7 @@ https://www.color-hex.com/color-palette/1045 */
   --color2: rgb(255, 0, 231);
 }
 
-/* POKEMON FONT */
+/* =========================== POKEMON FONT ============================*/
 @font-face {
   font-family: "Pokemon";
   src: url("./fonts/pokemon/pokemon_solid-webfont.woff") format("woff"),
@@ -65,7 +65,7 @@ h2 {
   color: white;
 }
 
-/* 3D title */
+/* ========================= 3D title ============================== */
 
 h1,
 h2 {
@@ -87,6 +87,9 @@ h3 {
 
 #headerTitle {
   color: var(--white);
+  @media screen and (max-width: 600px) {
+    font-size: 2.2rem;
+  }
 }
 
 .navBar {
@@ -104,7 +107,7 @@ h3 {
   justify-content: space-around;
 }
 
-/* Pokeball on decks pullout */
+/*====================== Pokeball on decks pullout ============================*/
 .pokeball {
   width: 30px;
   height: 30px;
@@ -163,7 +166,7 @@ h3 {
   color: #000;
 }
 
-/*=========================== deck name and email =====================*/
+/*=========================== Deck name and email =====================*/
 .white-text {
   padding-right: 200px;
 }
@@ -172,7 +175,7 @@ h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/* ===============================collection title========================== */
+/* =============================== Collection title ========================== */
 
 .collection-title {
   display: flex;
@@ -188,13 +191,13 @@ h3 {
   color: #21437c;
 }
 
-/* ======================sizing of carousel==================== */
+/* ====================== Sizing of carousel ==================== */
 .carousel .carousel-item {
   min-height: 400px;
   width: 270px !important;
 }
 
-/* -=============================Background image for profile Decks sidenav==================== */
+/* -============================= Background image for profile Decks sidenav ==================== */
 .profile-bg img {
   float: left;
   width: 300px;
@@ -231,7 +234,7 @@ h3 {
   right: 12%;
 }
 
-/* =================================TRADING PAGE STYLING ===================================*/
+/* ================================= TRADING PAGE STYLING ===================================*/
 
 .card-item {
   padding: 1em;
@@ -292,7 +295,7 @@ h3 {
   );
 }
 
-/* ==========================FONT STYLING==========================  */
+/* ========================== FONT STYLING ==========================  */
 
 li {
   font-family: "Pokemon GB";
@@ -338,7 +341,7 @@ p {
   }
 }
 
-/* =======================================HOVER FEATURES====================================  */
+/* ======================================= HOVER FEATURES ====================================  */
 .my-card {
   cursor: pointer;
 }
@@ -414,12 +417,12 @@ p {
   background-color: var(--grey);
 }
 
-/* cards drop shadow */
+/* =========================== Cards drop shadow ===============================*/
 .cards-container {
   filter: drop-shadow(25px 25px 10px grey);
 }
 
-/* ===============================hover reveal background image ==============================*/
+/* =============================== Hover reveal background image ==============================*/
 
 .scene {
   font-size: 62.5%;
@@ -439,7 +442,19 @@ p {
   border-radius: 50%;
 }
 
-/*======================== chat feature =========================*/
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .magic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*======================== Chat Feature =========================*/
 
 #gameboy {
   position: relative;
@@ -606,7 +621,7 @@ p {
   -webkit-transform: rotate(45deg);
 }
 
-/* ==========================inside chat ========================*/
+/* ===================================== Inside Chat =====================================*/
 
 .chat-container {
   z-index: 1;
@@ -667,7 +682,7 @@ p {
   margin-top: -4px;
 }
 
-/* ===========================pop out chat function========================== */
+/* =========================== Pop Out Chat Function ========================== */
 
 .chat-btn {
   flex: 1 1 auto;
@@ -707,7 +722,7 @@ p {
   );
 }
 
-/* ===============================POP-UP ========================================== */
+/* =============================== POP-UP ========================================== */
 
 .pop-up {
   position: absolute;
