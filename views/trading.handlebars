@@ -1,7 +1,7 @@
 <div class="l-flex-fix">
     <div class="l-flex-parent">
-        <div class="t-purple l-flex-child l-grid-half">
-            <h4>The cards I want to Trade away</h4>
+        <div class="t-purple l-flex-child l-grid-half tradeBox">
+            <h4 class="tradeAwayText">The cards I want to Trade away</h4>
             <div class="card-item">
                 <ul class="collapsible">
                     <li>
@@ -9,8 +9,8 @@
                             <i class="iconify" data-icon="mdi-pokeball" data-inline="true" style="font-size: 26px;"
                                 id="trade-icon"></i>
                             Your Cards
-                            <span></span></div>
-                        <div class="collapsible-body" id="left-trade">
+                            </div>
+                        <div class="collapsible-body" id="left-trade" class="rightTradeText">
                             <ul>
                                 {{#each userCards as |userCard|}}
                                 <li data-id="{{userCard.id}}" data-user="{{userCard.user_id}}" class="my-card">
@@ -35,13 +35,13 @@
             </div>
         </div>
 
-        <div class="t-white l-flex-child l-grid-half">
+        <div class="t-white l-flex-child l-grid-half tradeBox">
 
             <div class="chat-button btnC-2">
                 <button class="chat-btn btn"><span>Let's Chat !!</span></button>
             </div>
 
-            <h4>The cards from other users</h4>
+            <h4 class="otherUserText">The cards from other users</h4>
             <div class="card-item">
                 <ul class="collapsible">
                     <li>
@@ -49,8 +49,8 @@
                             <i class="iconify" data-icon="mdi-pokeball" data-inline="true" style="font-size: 26px;"
                                 id="trade-icon"></i>
                             Other User's Card
-                            <span></span></div>
-                        <div class="collapsible-body" id="right-trade">
+                            </div>
+                        <div class="collapsible-body" id="right-trade" class="rightTradeText">
                             <ul>
                                 {{#each otherCards as |otherCard|}}
                                 <li data-user="{{otherCard.user_id}}" data-id="{{otherCard.id}}" class="other-card">

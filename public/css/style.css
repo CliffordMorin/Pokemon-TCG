@@ -252,11 +252,6 @@ h3 {
 }
 
 .l-flex-child {
-  padding: 3em;
-  min-height: 100vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .t-purple {
@@ -295,6 +290,35 @@ h3 {
   );
 }
 
+.tradeAwayText {
+  font-size: 18px;
+}
+
+.otherUserText {
+  font-size: 18px;
+}
+
+.leftTradeText ul li {
+  font-size: 18px;
+}
+
+.rightTradeText ul li {
+  font-size: 18px;
+}
+
+.tradeBox {
+  padding: 3em;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 600px) {
+     padding: 1em;
+  }
+    
+  }
+}
 /* ========================== FONT STYLING ==========================  */
 
 li {

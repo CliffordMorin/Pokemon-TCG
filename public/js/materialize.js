@@ -114,6 +114,15 @@ $(".pop-up #close").click(function () {
   $(".pop-up").removeClass("open");
 });
 
+//not mobile friendly yet toast
+// Check if the screen width matches a mobile device
+if (window.matchMedia("(max-width: 768px)").matches) {
+  // If it does, show the toast
+  var toastHTML =
+    "<h3>This App is currently under construction to make it mobile friendly, thank you for your patience. Please enjoy our desktop version!</h3>";
+  M.toast({ html: toastHTML, classes: "rounded red", displayLength: 15000 });
+}
+
 // animated button
 var animateButton = function (e) {
   e.preventDefault;
