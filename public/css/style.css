@@ -305,7 +305,12 @@ p {
   font-family: "Pokemon GB";
 }
 
-.box {
+.homeText h3 {
+  font-family: "Pokemon GB";
+  font-size: 18px;
+}
+
+.homeBox {
   font-size: 18px;
   font-family: "Pokemon GB", Arial, sans-serif;
   border-radius: 2px;
@@ -321,7 +326,7 @@ p {
     inset 0 0 0 1px black;
 }
 
-.box > i {
+.homeBox > i {
   width: 0;
   height: 0;
   border: 5px solid transparent;
@@ -329,6 +334,20 @@ p {
   margin-top: 23px;
   animation: bounce 0.5s ease-in-out 0 infinite alternate;
   float: right;
+}
+
+/* ================ Home text media queries ================ */
+
+@media screen and (max-width: 600px) {
+  .homeBox h5 {
+    font-size: 14px;
+  }
+  .homeBox li {
+    font-size: 14px;
+  }
+  .homeText h3 {
+    font-size: 20px;
+  }
 }
 
 @keyframes bounce {

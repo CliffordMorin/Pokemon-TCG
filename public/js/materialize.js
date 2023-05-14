@@ -91,18 +91,6 @@ $(window).on("load", () => {
   $(".progress").delay(250).fadeOut();
 });
 
-// homepage audio
-
-function play() {
-  const audio = document.getElementById("pallet");
-  audio.volume = 0.25;
-  audio.loop = true;
-  if (audio.paused) {
-    audio.currentTime = 0;
-    audio.play();
-  } else audio.pause();
-}
-
 // reveal mouse magic on homepage
 
 $(document).ready(function () {
